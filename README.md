@@ -17,6 +17,16 @@ make
 sudo make install
 ```
 
+### Arch Linux (pacman)
+
+```bash
+git clone https://github.com/yorishori/bak && cd bak && makepkg -si
+```
+
+`makepkg` builds the package from the latest code on GitHub and installs it
+through pacman, so `pacman -R bak` removes it. To update later, run
+`makepkg -si` again in the same folder.
+
 You need `tar` and `xz`. You need `gpg` only for encryption and `rclone` only for uploads.
 
 ## Use

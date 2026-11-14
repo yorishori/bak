@@ -1,2 +1,6 @@
 bak
 *.o
+# makepkg
+src/
+pkg/
+*.pkg.tar*
