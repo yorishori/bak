@@ -2,9 +2,10 @@ CC ?= cc
 CFLAGS ?= -O2
 PREFIX ?= /usr/local
 WARN = -std=c99 -Wall -Wextra -Wpedantic
+LDLIBS = -lncursesw
 
 bak: bak.c
-	$(CC) $(WARN) $(CPPFLAGS) $(CFLAGS) $(LDFLAGS) -o $@ bak.c
+	$(CC) $(WARN) $(CPPFLAGS) $(CFLAGS) $(LDFLAGS) -o $@ bak.c $(LDLIBS)
 
 install: bak
 	install -Dm755 bak $(DESTDIR)$(PREFIX)/bin/bak

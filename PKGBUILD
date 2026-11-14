@@ -6,7 +6,7 @@ pkgdesc="Simple TUI tool for verified, compressed (optionally encrypted) folder 
 arch=('x86_64' 'aarch64' 'armv7h' 'i686')
 url="https://github.com/yorishori/bak"
 license=('unknown')
-depends=('glibc' 'tar' 'xz')
+depends=('glibc' 'ncurses' 'tar' 'xz')
 optdepends=('gnupg: encrypted backups'
             'rclone: uploading backups')
 makedepends=('git')
